@@ -10,17 +10,21 @@ public class ReadListener implements ItemReadListener<User>{
 	public void afterRead(User arg0) {
 		// TODO Auto-generated method stub
 		
+		System.out.println("***After Reading and Item*****"+arg0.toString());
+		
 	}
 
 	@Override
 	public void beforeRead() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("***Before Reading and Item*****");
 	}
 
 	@Override
 	public void onReadError(Exception arg0) {
 		// TODO Auto-generated method stub
+		
+		System.out.println("***Error occured while reading and item*****");
 		
 	}
 
